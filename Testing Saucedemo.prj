@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>Katalon</name>
+   <name>Testing Saucedemo</name>
    <tag></tag>
-   <UUID>00a495b7-045b-4778-85d0-e2332d62da8c</UUID>
+   <UUID>b944326a-981e-4ab7-80a6-17ed6ff05f7d</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\chris\Katalon Studio\Testing Saucedemo\Testing Saucedemo.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -24,5 +25,5 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
-   <type>GENERIC</type>
+   <type>WEBUI</type>
 </Project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Group of test case to make into a test Suites</description>
+   <name>SauceLabs Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b12ae100-3606-414d-97dc-ab7763858160</testCaseGuid>
+</TestCaseEntity>

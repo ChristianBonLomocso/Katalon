@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>used to test logic</description>
+   <name>Dummy</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>448a8e1c-3f1c-43f5-a9ed-f04c8446a720</testCaseGuid>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>a7d645f6-dbe2-4e2a-b16e-a6a4a8ff845f</id>
+      <masked>false</masked>
+      <name>ItemList</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add to cart and remove</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67e15e7d-dd80-45e1-8ea0-91b1d43258b3</testCaseGuid>
+   <variable>
+      <defaultValue>['']</defaultValue>
+      <description></description>
+      <id>6fae06d8-0048-4cb3-8fdf-4af4f785f67b</id>
+      <masked>false</masked>
+      <name>CartItems</name>
+   </variable>
+</TestCaseEntity>
