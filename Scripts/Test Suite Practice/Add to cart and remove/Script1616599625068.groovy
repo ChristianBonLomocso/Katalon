@@ -27,6 +27,7 @@ ItemCounter++
 
 CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
 
+
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Onesie add 2 cart'))
 
 (CartItems[ItemCounter]) = WebUI.getText(findTestObject('Test Suite Practice/Add to cart and Remove/Onesie title'))
@@ -67,36 +68,22 @@ WebUI.delay(4)
 
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Red tshirt cart rmve btn'))
 
-CustomKeywords.'com.saucelabs.test.CartCounter.RemoveItem'(CartItems[0], CartItems)
-
+CartItems = CustomKeywords.'com.saucelabs.test.CartCounter.RemoveItem'(CartItems[0], CartItems)
 ItemCounter--
-
 CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
 
-println(((((((('\n' + (CartItems[0])) + '\n') + (CartItems[1])) + '\n') + (CartItems[2])) + '\n') + (CartItems[3])) + '\n\n')
+//println(((((((('\n' + (CartItems[0])) + '\n') + (CartItems[1])) + '\n') + (CartItems[2])) + '\n') + (CartItems[3])) + '\n\n')
 
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Continue Shopping button'))
 
-not_run: WebUI.verifyElementNotPresent(findTestObject('null'), 0)
+WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/bike light remove btn'))
 
-not_run: WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Onesie remove btn'))
+CartItems = CustomKeywords.'com.saucelabs.test.CartCounter.RemoveItem'(CartItems[1], CartItems)
+ItemCounter--
+CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
+//println(((((((('\n' + (CartItems[0])) + '\n') + (CartItems[1])) + '\n') + (CartItems[2])) + '\n') + (CartItems[3])) + '\n\n')
+WebUI.delay(3)
 
-not_run: ItemCounter--
-
-not_run: WebUI.click(findTestObject('null'))
-
-not_run: WebUI.verifyElementNotPresent(findTestObject('Test Suite Practice/Add to cart and Remove/NoOf items indicator'), 
-    0)
-
-not_run: WebUI.delay(3)
-
-not_run: WebUI.click(findTestObject('null'))
-
-not_run: ItemCounter++
-
-not_run: CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
-
-not_run: WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/add 2 cart icon'))
-
+WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/add 2 cart icon'))

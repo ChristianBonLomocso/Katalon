@@ -29,4 +29,10 @@
          <variableId>6fae06d8-0048-4cb3-8fdf-4af4f785f67b</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5a848758-b674-441f-842c-644986593b86</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Test Suite Practice/Checkout</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -34,6 +34,7 @@ public class CartCounter {
 			KeywordUtil.markPassed("Value is the same .................")
 		}
 		else {
+			//		KeywordUtil.markFailedAndStop("Value is not the same ......................")
 			KeywordUtil.markFailed("Value is not the same ......................")
 		}
 	}
@@ -51,7 +52,7 @@ public class CartCounter {
 			{
 				CartItems.remove(ctr)
 				KeywordUtil.markPassed("String is the same .................")
-				return
+				return CartItems
 			}
 			else
 			{
@@ -60,6 +61,47 @@ public class CartCounter {
 		}
 		KeywordUtil.markFailed("String is not the same .................")
 	}
+
+	@Keyword
+	def EmtyFieldChecker (String text)
+	{
+		int lngth = text.length()
+	//	println("\n\n" + lngth)
+		if (lngth == 0)
+		{
+		//	println("\n\n its empty....")
+			return
+		}
+		else
+		{
+		//	println("\n\n its not empty...")
+			KeywordUtil.markFailed("It should not be empty .................")
+			return
+		}
+
+	}
+	
+	
+	@Keyword
+	def ItemChecker (ArrayList CartItems)
+	{
+		int ctr = 0 
+		while(CartItems[ctr] != null)
+			{
+				if(WebUI.verifyElementPresent(findTestObject(CartItems[ctr] ), 0) == true)
+				{
+					println("\n\n okok..............." + CartItems[ctr])
+					ctr++
+				}
+				else
+				{
+					println("\n\n Errorrrr...............")
+					KeywordUtil.markFailed("An item is missing from the list : " + CartItems[ctr] )
+				}
+			}
+	}
+	
+	
 	/*	
 	 @Keyword
 	 def clickElement(TestObject to) {
