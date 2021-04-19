@@ -1,0 +1,2 @@
+This a sample testing on the saucelabdemo.com page using test cases for each major function 
+and is compiled into one test suite
