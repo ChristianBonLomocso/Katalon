@@ -66,42 +66,42 @@ public class CartCounter {
 	def EmtyFieldChecker (String text)
 	{
 		int lngth = text.length()
-	//	println("\n\n" + lngth)
+		//	println("\n\n" + lngth)
 		if (lngth == 0)
 		{
-		//	println("\n\n its empty....")
+			//	println("\n\n its empty....")
 			return
 		}
 		else
 		{
-		//	println("\n\n its not empty...")
+			//	println("\n\n its not empty...")
 			KeywordUtil.markFailed("It should not be empty .................")
 			return
 		}
 
 	}
-	
-	
+
+
 	@Keyword
 	def ItemChecker (ArrayList CartItems)
 	{
-		int ctr = 0 
+		int ctr = 0
 		while(CartItems[ctr] != null)
+		{
+			if(WebUI.verifyElementPresent(findTestObject(CartItems[ctr] ), 0) == true)
 			{
-				if(WebUI.verifyElementPresent(findTestObject(CartItems[ctr] ), 0) == true)
-				{
-					println("\n\n okok..............." + CartItems[ctr])
-					ctr++
-				}
-				else
-				{
-					println("\n\n Errorrrr...............")
-					KeywordUtil.markFailed("An item is missing from the list : " + CartItems[ctr] )
-				}
+				println("\n\n okok..............." + CartItems[ctr])
+				ctr++
 			}
+			else
+			{
+				println("\n\n Errorrrr...............")
+				KeywordUtil.markFailed("An item is missing from the list : " + CartItems[ctr] )
+			}
+		}
 	}
-	
-	
+
+
 	/*	
 	 @Keyword
 	 def clickElement(TestObject to) {
