@@ -27,7 +27,6 @@ ItemCounter++
 
 CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
 
-
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Onesie add 2 cart'))
 
 (CartItems[ItemCounter]) = WebUI.getText(findTestObject('Test Suite Practice/Add to cart and Remove/Onesie title'))
@@ -69,21 +68,26 @@ WebUI.delay(4)
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Red tshirt cart rmve btn'))
 
 CartItems = CustomKeywords.'com.saucelabs.test.CartCounter.RemoveItem'(CartItems[0], CartItems)
+
 ItemCounter--
+
 CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
 
 //println(((((((('\n' + (CartItems[0])) + '\n') + (CartItems[1])) + '\n') + (CartItems[2])) + '\n') + (CartItems[3])) + '\n\n')
-
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/Continue Shopping button'))
 
-WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/bike light remove btn'))
+WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/bike light rmv btn'))
 
 CartItems = CustomKeywords.'com.saucelabs.test.CartCounter.RemoveItem'(CartItems[1], CartItems)
+
 ItemCounter--
+
 CustomKeywords.'com.saucelabs.test.CartCounter.ItemCounter'(ItemCounter)
+
 //println(((((((('\n' + (CartItems[0])) + '\n') + (CartItems[1])) + '\n') + (CartItems[2])) + '\n') + (CartItems[3])) + '\n\n')
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Test Suite Practice/Add to cart and Remove/add 2 cart icon'))
+

@@ -19,41 +19,41 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('Test Suite Practice/Checkout/checkout btn'))
 
-WebUI.setText(findTestObject('Test Suite Practice/Checkout/FN field'), 'Firstname')
+WebUI.setText(findTestObject('Test Suite Practice/Checkout/Fn Field'), 'Firstname')
 
-WebUI.setText(findTestObject('Test Suite Practice/Checkout/LField'), 'lastname')
+WebUI.setText(findTestObject('Test Suite Practice/Checkout/Ln Field'), 'lastname')
 
-WebUI.setText(findTestObject('Test Suite Practice/Checkout/Postal field'), '123')
+WebUI.setText(findTestObject('Test Suite Practice/Checkout/Postal Field'), '123')
 
-WebUI.click(findTestObject('Test Suite Practice/Checkout/Cout cancel btn'))
+WebUI.click(findTestObject('Test Suite Practice/Checkout/canel btn'))
 
 WebUI.click(findTestObject('Test Suite Practice/Checkout/checkout btn'))
 
-text = WebUI.getAttribute(findTestObject('Test Suite Practice/Checkout/FN field'), 'value')
+text = WebUI.getAttribute(findTestObject('Test Suite Practice/Checkout/Fn Field'), 'value')
 
 CustomKeywords.'com.saucelabs.test.CartCounter.EmtyFieldChecker'(text)
 
-text = WebUI.getAttribute(findTestObject('Test Suite Practice/Checkout/LField'), 'value')
+text = WebUI.getAttribute(findTestObject('Test Suite Practice/Checkout/Ln Field'), 'value')
 
 CustomKeywords.'com.saucelabs.test.CartCounter.EmtyFieldChecker'(text)
 
-text = WebUI.getAttribute(findTestObject('Test Suite Practice/Checkout/Postal field'), 'value')
+text = WebUI.getAttribute(findTestObject('Test Suite Practice/Checkout/Postal Field'), 'value')
 
 CustomKeywords.'com.saucelabs.test.CartCounter.EmtyFieldChecker'(text)
 
-WebUI.setText(findTestObject('Test Suite Practice/Checkout/FN field'), 'Firstname')
+WebUI.setText(findTestObject('Test Suite Practice/Checkout/Fn Field'), 'Firstname')
 
-WebUI.setText(findTestObject('Test Suite Practice/Checkout/Postal field'), '123')
+WebUI.setText(findTestObject('Test Suite Practice/Checkout/Postal Field'), '123')
 
-WebUI.click(findTestObject('Test Suite Practice/Checkout/Cout continue btn'))
+WebUI.click(findTestObject('Test Suite Practice/Checkout/C.out Continue Btn'))
 
-WebUI.verifyElementPresent(findTestObject('Test Suite Practice/Checkout/error message'), 0)
+WebUI.verifyElementPresent(findTestObject('Test Suite Practice/Checkout/Error message'), 0)
 
-WebUI.setText(findTestObject('Test Suite Practice/Checkout/LField'), 'lastname')
+WebUI.setText(findTestObject('Test Suite Practice/Checkout/Ln Field'), 'lastname')
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Test Suite Practice/Checkout/Cout continue btn'))
+WebUI.click(findTestObject('Test Suite Practice/Checkout/C.out Continue Btn'))
 
-WebUI.click(findTestObject('Test Suite Practice/Checkout/finish btn'))
+WebUI.click(findTestObject('Test Suite Practice/Checkout/Finsih Btn'))
 

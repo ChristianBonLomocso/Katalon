@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LastName field</name>
+   <name>Postal Field</name>
    <tag></tag>
-   <elementGuidId>55e6bd27-3e23-47f2-b079-22f4af689dbc</elementGuidId>
+   <elementGuidId>07c1ee4c-04fe-4529-a3db-d9b2ce56ae29</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='last-name']</value>
+         <key>CSS</key>
+         <value>#postal-code</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#last-name</value>
+         <key>XPATH</key>
+         <value>//input[@id='postal-code']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,11 +24,18 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input_error form_input</value>
+   </webElementProperties>
+   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>last-name</value>
+      <value>Zip/Postal Code</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,23 +47,23 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form_input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>data-test</name>
       <type>Main</type>
-      <value>lastName</value>
+      <value>postalCode</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>id</name>
       <type>Main</type>
-      <value>Last Name</value>
+      <value>postal-code</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>postalCode</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,27 +84,27 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;last-name&quot;)</value>
+      <value>id(&quot;postal-code&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='last-name']</value>
+      <value>//input[@id='postal-code']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='checkout_info_container']/div/form/div/input[2]</value>
+      <value>//div[@id='checkout_info_container']/div/form/div/div[3]/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//input[2]</value>
+      <value>//div[3]/input</value>
    </webElementXpaths>
 </WebElementEntity>
